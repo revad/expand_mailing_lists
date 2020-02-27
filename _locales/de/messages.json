@@ -1,0 +1,15 @@
+{
+  "extensionName": {
+    "message": "Erweitern Sie Mailinglisten MX",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Ersetzen Sie alle Mailinglisten durch ihre Kontakte.",
+    "description": "Description of the extension."
+  },
+    "extensionButton": {
+    "message": "Erweitern Listen",
+    "description": "Toolbar button caption." 
+  } 
+}
