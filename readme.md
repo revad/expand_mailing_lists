@@ -2,18 +2,11 @@
 
 ## Description
 
-This addon adds a button to the compose window toolbar.
+This Mail Extension addon adds a button to the compose window toolbar.
 
-It replaces all mailing lists with their contacts.
+Clicking it replaces all mailing lists with their contacts. 
+It removes any identical contacts.
 
-## Thunderbird Version
+## Requirements
 
-Requires TB v75+
-
-## Status
-
-It works, subject to TODO below.
-
-## TODO
-
-Check for other formats of composeRecipient - can be an object containing id and type?
+Requires Thunderbird version 75+

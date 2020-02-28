@@ -12,6 +12,7 @@ function buttonlistener(args) { //15
     let listarray = [];
     browser.addressBooks.list(true)
     .then(function(books) {  //7
+      // console.log("Address books: " + JSON.stringify(books));
       books.forEach(book => {  //6
         if (book.mailingLists) {  //5
           book.mailingLists.forEach(list => {  //4
@@ -19,10 +20,10 @@ function buttonlistener(args) { //15
 // Add the mailing list node to listarray
             listarray.push(list)
             // console.log("Mailing list node: " + JSON.stringify(list));
-            resolve(listarray);
           }); //4
         }; //5
       }); //6   
+    resolve(listarray);
     }); //7
   }); //8
 
@@ -32,17 +33,14 @@ function buttonlistener(args) { //15
 
 // This regex defines any string with one @ followed by a string containing 1 or more dots and no spaces as an email address
 // Anything else might be a list
-// TODO Check how TB defines an email address
     var re = /^[^@]*@[^@\. ]*\.[^@ ]*$/;
 
 // For an array of ComposeRecipient replace mailing lists with contacts 
-// TODO Case where ComposeRecipient is an object
-
     function convertrecipientarray(recipientarray) { //9
       expandedarray1 = [];      
       listsfound = [];
       recipientarray.forEach(recipient => {  //8
-// Is this recipient an address - it ought to be a list (or an invalid address)            
+// Is this recipient an address - if not it may be a list (or an invalid address)            
         isaddress = re.test(recipient) ;   
         if (isaddress) {  //7
 // Valid address - add to ouput
@@ -91,7 +89,6 @@ function buttonlistener(args) { //15
 
 // Expand the three recipient arrays (To, CC, BCC)
     browser.compose.getComposeDetails(tabid)
-// TODO Check other formats of composeRecipient - can be an object containing id, type
     .then(details => {
       // console.log("Compose details: "+JSON.stringify(details));
       expandedto = [];
