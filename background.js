@@ -33,7 +33,7 @@ function buttonlistener(args) { //15
 
 // This regex defines any string with one @ followed by a string containing 1 or more dots and no spaces as an email address
 // Anything else might be a list
-    var re = /^[^@]*@[^@\. ]*\.[^@ ]*$/;
+    var re = /[^@]*@[^@\. ]*\.[^@ ]*$/;
 
 // For an array of ComposeRecipient replace mailing lists with contacts 
     function convertrecipientarray(recipientarray) { //9
