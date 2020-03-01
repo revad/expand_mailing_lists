@@ -20,10 +20,13 @@
   },
   "compose_action": {
     "default_icon": {
-      "32": "icons/button_32.png"
+      "48": "icons/expand_48.png"
     },
     "default_title": "__MSG_extensionButton__"
   },
   "permissions": 
-    ["compose", "addressBooks"]
+    ["compose", "addressBooks"],
+  "icons": {
+    "48": "icons/expand_48.png"
+  }
 }
