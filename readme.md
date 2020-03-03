@@ -1,4 +1,4 @@
-# Thunderbird addon: Expand mailing lists MX
+# Thunderbird addon: Expand mailing lists (MX)
 
 ## Description
 

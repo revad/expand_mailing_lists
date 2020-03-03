@@ -1,15 +1,15 @@
 {
   "extensionName": {
-    "message": "Étendez les listes de diffusion",
+    "message": "Expandir listas de correo",
     "description": "Name of the extension."
   },
 
   "extensionDescription": {
-    "message": "Remplacez toutes les listes de diffusion avec leurs contacts.",
+    "message": "Reemplace todas las listas de correo con sus contactos.",
     "description": "Description of the extension."
   },
-    "extensionButton": {
-    "message": "Étendez listes",
+  "extensionButton": {
+    "message": "Expandir listas",
     "description": "Toolbar button caption." 
-  } 
+  }   
 }
