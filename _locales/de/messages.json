@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Erweitern Sie Mailinglisten",
+    "message": "Mailinglisten erweitern",
     "description": "Name of the extension."
   },
 
@@ -9,7 +9,7 @@
     "description": "Description of the extension."
   },
     "extensionButton": {
-    "message": "Erweitern Listen",
+    "message": "Listen erweitern",
     "description": "Toolbar button caption." 
   } 
 }
