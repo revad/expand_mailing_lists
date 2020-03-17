@@ -112,13 +112,7 @@ function buttonlistener(args) { //15
       }  
   
 // Set the compose details to include the new recipients
-  
-      newdetails = details ;
-      newdetails.to = expandedto  ;
-      newdetails.cc = expandedcc  ;
-      newdetails.bcc = expandedbcc  ;
-  
-      browser.compose.setComposeDetails(tabid, newdetails)
+      browser.compose.setComposeDetails(tabid,  { to: expandedto, cc: expandedcc, bcc: expandedbcc} )
   
     });
 
