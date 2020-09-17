@@ -9,7 +9,7 @@
         "description": "Description of the extension."
     },
     "extensionButton": {
-        "message": "Címlisták kibontása",
+        "message": "Listák kibontása",
         "description": "Toolbar button caption."
     }
 }
